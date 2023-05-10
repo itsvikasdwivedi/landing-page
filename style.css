@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+  
+.first-img {
+    width: 100%;
+    height: 80vh;
+    background: transparent url(Assets/banner\ image\ copy.png) 0% 0% no-repeat padding-box;
+    background-position: right 10% center;
+    background-size: cover;
+    opacity: 1;
+}
+.first-img-content{
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+.header-text {
+    /* top: 295px;
+    left: 141px; */
+    width: 554px;
+    /* height: 153px; */
+    text-align: left;
+    font: normal normal normal 31px Aktifo A;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.black-circle-container {
+    display: flex;
+    gap: 20px;
+
+}
+
+.black-circle {
+    height: 100px;
+    width: 100px;
+    background-color: #292929;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+/* .group-icon-1{
+    margin: auto;
+}
+.group-icon-2{
+    
+}
+.group-icon-3{
+
+} */
+
+.second-img {
+    /* top: 924px;
+    left: 0px; */
+    width: 100%;
+    height: 80vh;
+    background: transparent url(Assets/back.png) 0% 0% no-repeat padding-box;
+    background-position: right 10% center;
+    background-size: cover;
+    opacity: 1;
+}
+
+.second-img-text {
+    height: 80vh;
+    background: transparent linear-gradient(268deg, #FFFFFF00 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.99;
+    width: 50%;
+}
+
+.second-img-text>div {
+    padding: 100px;
+}
+
+.second-img-text>div>h3 {
+    text-transform: capitalize;
+}
+
+.featuresList {
+    letter-spacing: 0px;
+    color: #131313;
+}
+
+.inquire-btn {
+    background-color: #F26621;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 9px 9px 9px 9px;
+    border-radius: 6px;
+}
+
+.third-img {
+    background: #E5E5E5 0% 0% no-repeat padding-box;
+    /* opacity: 1; */
+    height: 100vh;
+    width: 100%;
+}
+
+.interior-design-img {
+    width: 681px;
+    height: 1156px;
+    background: transparent url(Assets/GS_DIGITAL_AD_WALL_FILMS_INTERIOR_DESIGN_COLLECTION_Indoor_MPI8621_Removable.png) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.third-img-content {
+    display: flex;
+}
+
+.why-us-box {
+    padding: 50px;
+}
+
+.why-us-box>h3 {
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.white-ellipse-parent {
+    display: flex;
+    gap: 30px;
+}
+
+.white-ellipse-child {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+}
+
+.white-ellipse {
+    height: 100px;
+    width: 100px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.why-us-reasons>p {
+    width: 500px
+}
+
+.fourth-img {
+    background-color: #1A1A1A;
+}
+
+.cp-text {
+    text-align: center;
+    padding: 1%;
+    letter-spacing: 0px;
+    color: #848484;
+}
