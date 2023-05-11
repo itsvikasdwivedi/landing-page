@@ -14,10 +14,11 @@
 <body>
     <div class="global-container">
         <section>
+            <!-- First layout starts from here -->
             <div class="first-img" id="homepage">
                 <div class="first-img-content">
                     <div class="logo">
-                        <img src="./Assets/Asset 3@4x-8.png" alt="">
+                        <img src="./Assets/Asset 3@4x-8.png" width="150px" height="50px" alt="">
                     </div>
                     <div class="header-text">
                         <p>Take your graphics protection to the next level with DOL Max overlaminates</p>
@@ -25,26 +26,116 @@
                     <div class="sub-text-header">
                         <p>Pair with MPI 1105 wrapping film for ramped up protection</p>
                     </div>
-                    <div class="black-circle-container">
-                        <div class="black-circle">
+                    <div class="black-ellipse-container">
+                        <div class="black-ellipse">
                             <img class="group-icon-1" src="./Assets/Group 194.png" alt="group-svg-icon1">
                         </div>
-                        <div class="black-circle">
+                        <div class="black-ellipse">
                             <img class="group-icon-2" src="./Assets/Group 195.svg" alt="group-svg-icon2">
-    
+
                         </div>
-                        <div class="black-circle">
+                        <div class="black-ellipse">
                             <img class="group-icon-3" src="./Assets/Asset 2ne.svg" alt="group-svg-icon3">
                         </div>
                     </div>
                 </div>
+                <!-- Form layout starts from here -->
+                <div id="feedback-form" onsubmit="return validateForm()">
+                    <div>
+                        <h2>connect with us</h2>
+                        <p>for outstanding protective overlaminates</p>
+                    </div>
+                    <div>
+                        <form>
+                            <div>
+                                <div class="input-boxes">
+                                    <label>
+                                        First Name
+                                        <input type="text" name="name" id="firstName" required />
+                                    </label>
+                                    <label>
+                                        Last Name
+                                        <input type="text" name="name" id="lastName" required />
+                                    </label>
+                                </div>
+                                <div class="input-boxes">
+                                    <label>
+                                        Email
+                                        <input type="email" name="email" id="email" required />
+                                    </label>
+                                    <label>
+                                        Contact Number
+                                        <input type="tel" name="mobile" maxlength="10" id="contact" required>
+                                    </label>
+                                </div>
+                                <div class="input-boxes">
+                                    <label>
+                                        Company
+                                        <br>
+                                        <input type="text" name="name" id="company" required />
+                                    </label><br>
+                                    <label class="state">
+                                        State
+                                        <select name="state" id="state" required>
+                                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                            <option value="West Bengal">West Bengal</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="selective-input">
+                                    <label>
+                                        How would you descrive yourself ?
+                                        <select name="role" id="role" required>
+                                            <option value="Installer">Installer</option>
+                                            <option value="TSE">TSE</option>
+                                            <option value="Full Stack Engineer">Full Stack Engineer</option>
+                                            <option value="Backend Developer">Backend Developer</option>
+                                            <option value="Frontend Developer">Frontend Developer</option>
+                                        </select>
+                                    </label>
+                                </div>
+
+                                <div class="selective-input">
+                                    <label>
+                                        Preferred Distributor:
+                                        <select name="distributor" id="distributor" required>
+                                            <option value="Aerotect">Aerotect</option>
+                                            <option value="Alpha">Alpha</option>
+                                            <option value="Meesho">Meesho</option>
+                                            <option value="Paytm">Paytm</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="additional-info">
+                                    <label>Additional Information
+                                        <textarea name="message" id="message" cols="58" rows="6" required
+                                            minlength="10"></textarea>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div>
+                                <label for="feedback-notify">I'd like to receive promotions, product information and
+                                    service offers from Avery Dennison.</label>
+                                <input type="checkbox" id="feedback-notify" name="notify">
+                            </div>
+                            <button type="submit" value="Submit">Submit <i
+                                    class="fa-solid fa-arrow-right-long"></i></button>
+                        </form>
+                    </div>
+                </div>
             </div>
+            <!-- Second layout starts from here -->
             <div class="second-img">
                 <div class="second-img-text">
                     <div>
                         <h3>dol max overlaminate films</h3>
-                        <p>Printed graphics deserve maximum protection, DOL Max is the solution.</p>
-                        <p>Features & Benefits:</p>
+                        <p class="printed-graphics">Printed graphics deserve maximum protection, DOL Max is the
+                            solution.</p>
+                        <p class="feature-benefits">Features & Benefits:</p>
                         <ul class="featuresList">
                             <li>Premium vertical durability of up to 7 years and up to 2 years horizontal durability
                                 protection.</li>
@@ -60,10 +151,13 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Third layout starts from here -->
             <div class="third-img">
                 <div class="third-img-content">
-                    <div class="interior-design">
-                        <img src="./Assets/GS_DIGITAL_AD_WALL_FILMS_INTERIOR_DESIGN_COLLECTION_Indoor_MPI8621_Removable.png"
+                    <div>
+                        <img class="interior-design"
+                            src="./Assets/GS_DIGITAL_AD_WALL_FILMS_INTERIOR_DESIGN_COLLECTION_Indoor_MPI8621_Removable.png"
                             height="600px" width="500px" alt="design-collection">
                     </div>
                     <div class="why-us-box">
@@ -72,10 +166,10 @@
                             <div>
                                 <div class="white-ellipse-child">
                                     <div class="white-ellipse">
-                                        <img src="Assets/Group 103.svg" alt="" >
+                                        <img src="Assets/Group 103.svg" alt="Group 103" height="55px" width="100%">
                                     </div>
                                     <div class="why-us-reasons">
-                                        <h5>quality products </h5>
+                                        <h3>quality products </h3>
                                         <p>Our digital overlaminate films are made from the highest quality
                                             materials and are designed to provide superior protection and appearance to
                                             your
@@ -83,9 +177,12 @@
                                     </div>
                                 </div>
                                 <div class="white-ellipse-child">
-                                    <div class="white-ellipse"></div>
+                                    <div class="white-ellipse">
+                                        <img src="Assets/ici-adhesives.svg" alt="ici-adhesives" height="40px"
+                                            width="100%">
+                                    </div>
                                     <div class="why-us-reasons">
-                                        <h5>multiple options</h5>
+                                        <h3>multiple options</h3>
                                         <p>
                                             We offer DOL Max in a 2.1 mil gloss finish and
                                             1.3 mil optically clear, gloss finish. This allows you to choose the perfect
@@ -97,10 +194,11 @@
                                 </div>
                                 <div class="white-ellipse-child">
                                     <div class="white-ellipse">
-                                        <img src="" alt="">
+                                        <img src="Assets/ici-online-communication.svg" alt="ici-online-communication"
+                                            height="45px" width="100%">
                                     </div>
                                     <div class="why-us-reasons">
-                                        <h5>expertise and support</h5>
+                                        <h3>expertise and support</h3>
                                         <p>Our team of
                                             experts are available to provide guidance and support throughout the entire
                                             process, from selecting the right product for your needs to installation and
@@ -109,25 +207,51 @@
                                 </div>
                                 <div class="white-ellipse-child">
                                     <div class="white-ellipse">
-                                        <img src="./Assets/Path 68.svg" alt="durability-ass">
+                                        <img src="./Assets/Path 68.svg" alt="durability-ass" height="55px" width="100%">
                                     </div>
                                     <div class="why-us-reasons">
-                                        <h5>durability assurance</h5>
+                                        <h3>durability assurance</h3>
                                         <p>Trust our products with confidence, as we offer
                                             industry leading durability assurance for our overlaminate films.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button class="inquire-btn">request a call back <i
-                            class="fa-solid fa-arrow-right-long"></i></button>
+                        <a href="#homepage">
+                            <button class="inquire-btn">request a call back <i
+                                    class="fa-solid fa-arrow-right-long"></i></button>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Footer layout starts from here -->
         <footer>
             <div class="fourth-img">
-
+                <div class="footer-list-parent-1">
+                    <div class="footer-logo">
+                        <p>best solutions from</p>
+                        <img src="./Assets/Vector Smart Object.png" alt="footer-logo">
+                    </div>
+                    <ul class="footer-list-1">
+                        <li>DOL Max Overlaminate Films</li>
+                        <li>Why us</li>
+                        <li>Enquire now</li>
+                    </ul>
+                </div>
+                <div class="footer-list-parent-2">
+                    <ul class="footer-list-2">
+                        <li>Avery Dennison Overlaminate </li>
+                        <li>Avery Dennison Overlaminate Films</li>
+                        <li> Avery Dennison Digital Overlaminate Films</li>
+                        <li>Avery Dennison DOL Max</li>
+                    </ul>
+                    <ul class="footer-list-3">
+                        <li>Overlaminate Digital Overlaminate Films</li>
+                        <li> Overlaminate Films</li>
+                        <li> Digital Overlaminate Films</li>
+                    </ul>
+                </div>
             </div>
             <div class="cp-text">
                 <p>© 2023 Avery Dennison Label Packaging Material. All rights reserved.</p>
@@ -137,3 +261,4 @@
 </body>
 
 </html>
+<script src="./script.js"></script>

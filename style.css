@@ -3,45 +3,65 @@
     padding: 0;
 }
 
-  
 .first-img {
+    position: relative;
     width: 100%;
     height: 80vh;
-    background: transparent url(Assets/banner\ image\ copy.png) 0% 0% no-repeat padding-box;
-    background-position: right 10% center;
+    background: transparent url(Assets/banner\ image\ copy@2x.png);
+    background-repeat: no-repeat;
     background-size: cover;
-    opacity: 1;
+    background-position: center;
 }
-.first-img-content{
+
+.first-img-content {
     position: absolute;
     top: 20px;
     left: 100px;
+    /* border: 2px solid gray; */
+    /* padding: 20px; */
 }
-.header-text {
-    /* top: 295px;
-    left: 141px; */
-    width: 554px;
-    /* height: 153px; */
+
+.logo {
+    padding-bottom: 20px;
+}
+
+.header-text p {
+    width: 400px;
     text-align: left;
-    font: normal normal normal 31px Aktifo A;
+    font: normal normal normal 31px/32px Aktifo A;
     letter-spacing: 0px;
     color: #000000;
-    opacity: 1;
 }
 
-.black-circle-container {
+.sub-text-header {
+    margin-top: 50px;
+}
+
+.sub-text-header p {
+    width: 300px;
+    text-align: left;
+    font: normal normal 100 20px/20px Aktifo A;
+    letter-spacing: 0px;
+    color: #292929;
+}
+
+.black-ellipse-container {
     display: flex;
+    justify-content: center;
     gap: 20px;
-
+    margin-top: 50px;
+    align-items: center;
 }
 
-.black-circle {
-    height: 100px;
-    width: 100px;
+.black-ellipse {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #292929;
     border-radius: 50%;
-    text-align: center;
-
+    /* text-align: center; */
 }
 
 /* .group-icon-1{
@@ -54,15 +74,116 @@
 
 } */
 
+/* Connect us Form styling starts from here */
+#feedback-form {
+    width: 450px;
+    background-color: #fcfcfc;
+    padding: 20px 30px 40px 20px;
+    box-shadow: 0px 14px 27px #00000017;
+    border-radius: 13px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    z-index: 1;
+}
+
+#feedback-form * {
+    box-sizing: border-box;
+}
+
+#feedback-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+#feedback-form p {
+    font: normal normal normal 15px/24px Aktifo A;
+    color: #292929;
+    margin-left: 22%;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+#feedback-form input {
+    margin-bottom: 15px;
+}
+
+.input-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.state{
+    margin-top: -15px;
+
+}
+#state{
+    width: 200px;
+}
+.selective-input,
+.additional-info {
+    margin-bottom: 20px;
+}
+
+input,
+select {
+    border: 0.8px solid #62777D;
+    border-radius: 8px;
+    width: 100%;
+}
+
+#feedback-form input,
+select {
+    display: block;
+    /* height: 32px; */
+    padding: 6px 16px;
+    width: 100%;
+}
+
+#feedback-form label {
+    color: #292929;
+    font-size: 0.8em;
+}
+
+.additional-info textarea {
+    border-radius: 5px;
+    border: 0.8px solid #62777D;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: none;
+}
+
+#feedback-form input[type="checkbox"] {
+    float: left;
+}
+
+
+
+
+#feedback-form button[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 9px;
+    border: none;
+    color: #eee;
+    font-weight: 700;
+    background-color: #F26621;
+}
+
 .second-img {
     /* top: 924px;
     left: 0px; */
     width: 100%;
     height: 80vh;
     background: transparent url(Assets/back.png) 0% 0% no-repeat padding-box;
-    background-position: right 10% center;
+    background-repeat: no-repeat;
     background-size: cover;
-    opacity: 1;
+    background-position: center;
 }
 
 .second-img-text {
@@ -70,15 +191,39 @@
     background: transparent linear-gradient(268deg, #FFFFFF00 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
     opacity: 0.99;
     width: 50%;
+
 }
 
 .second-img-text>div {
-    padding: 100px;
+    padding: 80px;
+    width: 60%;
 }
 
 .second-img-text>div>h3 {
     text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
+
+.printed-graphics {
+    letter-spacing: 0px;
+    color: #131313;
+    margin-bottom: 10px;
+}
+
+.feature-benefits {
+    letter-spacing: 0px;
+    color: #131313;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button,
+ul,
+li {
+    margin-bottom: 10px;
+}
+
 
 .featuresList {
     letter-spacing: 0px;
@@ -92,6 +237,8 @@
     cursor: pointer;
     padding: 9px 9px 9px 9px;
     border-radius: 6px;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 .third-img {
@@ -101,12 +248,12 @@
     width: 100%;
 }
 
-.interior-design-img {
+/* .interior-design-img {
     width: 681px;
     height: 1156px;
     background: transparent url(Assets/GS_DIGITAL_AD_WALL_FILMS_INTERIOR_DESIGN_COLLECTION_Indoor_MPI8621_Removable.png) 0% 0% no-repeat padding-box;
     opacity: 1;
-}
+} */
 
 .third-img-content {
     display: flex;
@@ -124,20 +271,28 @@
 .white-ellipse-parent {
     display: flex;
     gap: 30px;
+
 }
 
 .white-ellipse-child {
     display: flex;
-    /* flex-direction: column; */
     gap: 20px;
+    margin: 20px 0 22px 0;
 }
 
 .white-ellipse {
-    height: 100px;
-    width: 100px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 70px;
     background-color: #FFFFFF;
     border-radius: 50%;
-    text-align: center;
+    align-self: center;
+}
+
+.why-us-reasons>h3 {
+    text-transform: capitalize;
+    padding-bottom: 5px;
 }
 
 .why-us-reasons>p {
@@ -146,6 +301,44 @@
 
 .fourth-img {
     background-color: #1A1A1A;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    pointer-events: none;
+}
+
+.footer-logo p {
+    padding-bottom: 2px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.footer-list-1 {
+    list-style: none;
+    color: #FFFFFF;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+.footer-list-parent-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.footer-list-parent-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-list-2,
+.footer-list-3 {
+    list-style: none;
+    color: #727272;
+    font-size: small;
 }
 
 .cp-text {
@@ -153,4 +346,107 @@
     padding: 1%;
     letter-spacing: 0px;
     color: #848484;
+}
+
+@media only screen and (max-width: 430px) {
+    .first-img {
+        border: 1px solid gold;
+        height: 698px;
+        background-position: top 10% right 30%;
+
+    }
+
+    .first-img-content {
+        left: 20px;
+    }
+
+    .header-text > p {
+        width: 300px;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-size: 20px;
+        /* color: #F26621; */
+    }
+
+    .sub-text-header > p{
+        margin-top: 20px;
+        text-align: left;
+        width: 300px;
+        font-weight: normal;
+    }
+
+    #feedback-form {
+        top: 60%;
+        left: 8%;
+        width: 320px;
+    }
+
+    .input-boxes {
+        flex-direction: column;
+        padding: 10;
+    }
+    .input{
+        width: 100%;
+    }
+
+    .third-img-content {
+        flex-direction: column-reverse;
+    }
+
+    .second-img {
+        border: 1px solid gold;
+        height: 698px;
+        background-position: top 10% right 30%;
+    }
+
+    .second-img-text>div {
+        display: none;
+    }
+
+    .third-img {
+        height: max-content;
+    }
+
+    .interior-design {
+        height: 600px;
+        width: 100%;
+    }
+
+    .white-ellipse-parent {
+        flex-direction: column;
+    }
+
+    .white-ellipse-child {
+        flex-direction: column;
+    }
+
+    .why-us-reasons {
+        text-justify: auto;
+    }
+
+    .why-us-reasons>p {
+        width: 300px
+    }
+
+    .fourth-img {
+        padding: 15px;
+        height: max-content;
+        width: fit-content;
+        gap: 20px;
+    }
+
+    /* .footer-logo, */
+    .footer-logo>p {
+        display: none;
+    }
+
+    .footer-list-2,
+    .footer-list-3 {
+        float: left;
+    }
+    .footer-list-parent-1{
+        flex-direction: column-reverse;
+    }
+    .footer-list-parent-2{
+        flex-direction: column;
+    }
 }
