@@ -349,6 +349,7 @@ li {
 }
 
 @media only screen and (max-width: 430px) {
+
     .first-img {
         border: 1px solid gold;
         height: 698px;
